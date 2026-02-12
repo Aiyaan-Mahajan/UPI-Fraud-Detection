@@ -1,6 +1,3 @@
-Perfect 👌 I’ll give you a clean, simple, professional README that looks good on GitHub and is easy to understand.
-
-You can copy-paste this directly into your README.md.
 
 💳 UPI Fraud Detection Using Machine Learning
 📌 Overview
