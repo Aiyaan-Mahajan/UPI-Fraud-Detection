@@ -6,7 +6,7 @@ Unified Payments Interface (UPI) is a real-time digital payment system widely us
 
 This project focuses on building a machine learning model to detect fraudulent UPI transactions using classification techniques.
 
-🎯 Objective
+🎯 **Objective**
 
 To develop a robust fraud detection system that can accurately classify transactions as:
 
@@ -14,7 +14,7 @@ To develop a robust fraud detection system that can accurately classify transact
 
 🚨 Fraudulent (1)
 
-📊 Dataset & Preprocessing
+📊 **Dataset & Preprocessing**
 
 The following steps were performed:
 
@@ -32,7 +32,7 @@ Removed unnecessary ID-based columns
 
 Handled class imbalance using SMOTE (Synthetic Minority Over-sampling Technique)
 
-🤖 Models Implemented
+🤖 **Models Implemented**
 
 The following machine learning models were trained and compared:
 
@@ -44,7 +44,7 @@ Gradient Boosting
 
 XGBoost (Best Performing Model)
 
-⚙️ Model Optimization
+⚙️** Model Optimization**
 
 Applied SMOTE to balance the training dataset
 
@@ -54,7 +54,7 @@ Re-trained XGBoost using optimal hyperparameters
 
 Although RandomizedSearchCV is more computationally efficient, GridSearchCV was used for exhaustive parameter tuning.
 
-📈 Final Model Performance (XGBoost)
+📈 **Final Model Performance (XGBoost)**
 
 Accuracy: 96.9%
 
@@ -64,7 +64,7 @@ F1 Score: ~0.93
 
 These results indicate strong classification performance and effective fraud detection capability.
 
-🧠 Key Insights
+🧠 **Key Insights**
 
 XGBoost outperformed other models due to its boosting mechanism and ability to handle complex feature interactions.
 
@@ -72,7 +72,7 @@ Handling class imbalance significantly improved recall and overall model robustn
 
 ROC-AUC and F1-score were prioritized over accuracy due to the nature of fraud detection problems.
 
-🛠 Technologies Used
+🛠 **Technologies Used**
 
 Python
 
