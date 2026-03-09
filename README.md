@@ -1,4 +1,3 @@
-
 💳 UPI Fraud Detection Using Machine Learning
 📌 Overview
 
@@ -6,7 +5,7 @@ Unified Payments Interface (UPI) is a real-time digital payment system widely us
 
 This project focuses on building a machine learning model to detect fraudulent UPI transactions using classification techniques.
 
-🎯 **Objective**
+🎯 Objective
 
 To develop a robust fraud detection system that can accurately classify transactions as:
 
@@ -14,7 +13,7 @@ To develop a robust fraud detection system that can accurately classify transact
 
 🚨 Fraudulent (1)
 
-📊 **Dataset & Preprocessing**
+📊 Dataset & Preprocessing
 
 The following steps were performed:
 
@@ -32,7 +31,7 @@ Removed unnecessary ID-based columns
 
 Handled class imbalance using SMOTE (Synthetic Minority Over-sampling Technique)
 
-🤖 **Models Implemented**
+🤖 Models Implemented
 
 The following machine learning models were trained and compared:
 
@@ -42,37 +41,39 @@ Random Forest
 
 Gradient Boosting
 
-XGBoost (Best Performing Model)
+XGBoost
 
-⚙️** Model Optimization**
+After evaluation and hyperparameter tuning, Random Forest performed the best and was selected as the final model.
+
+⚙️ Model Optimization
 
 Applied SMOTE to balance the training dataset
 
 Performed Hyperparameter Tuning using GridSearchCV
 
-Re-trained XGBoost using optimal hyperparameters
+Re-trained Random Forest using optimal hyperparameters
 
 Although RandomizedSearchCV is more computationally efficient, GridSearchCV was used for exhaustive parameter tuning.
 
-📈 **Final Model Performance (XGBoost)**
+📈 Final Model Performance (Random Forest)
 
-Accuracy: 96.9%
+Accuracy: 94.9%
 
-ROC-AUC Score: 93.75%
+ROC-AUC Score: 94.9%
 
-F1 Score: ~0.93
+F1 Score: ~0.95
 
 These results indicate strong classification performance and effective fraud detection capability.
 
-🧠 **Key Insights**
+🧠 Key Insights
 
-XGBoost outperformed other models due to its boosting mechanism and ability to handle complex feature interactions.
+Random Forest performed best due to its ensemble learning approach and ability to reduce overfitting by combining multiple decision trees.
 
-Handling class imbalance significantly improved recall and overall model robustness.
+Handling class imbalance using SMOTE significantly improved recall and fraud detection capability.
 
 ROC-AUC and F1-score were prioritized over accuracy due to the nature of fraud detection problems.
 
-🛠 **Technologies Used**
+🛠 Technologies Used
 
 Python
 
@@ -81,8 +82,6 @@ Pandas
 NumPy
 
 Scikit-learn
-
-XGBoost
 
 Imbalanced-learn (SMOTE)
 
